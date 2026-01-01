@@ -1,15 +1,6 @@
-/* 1. Скидання відступів без використання * */
-body,
-ul,
-li,
-h1,
-h2,
-p {
+body {
   margin: 0;
   padding: 0;
-}
-
-body {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   line-height: 1.5;
@@ -45,11 +36,15 @@ body {
 
 /* 4. Навігація */
 .nav__list {
+  margin: 0;
+  padding: 0;
   display: flex;
   list-style: none;
 }
 
 .nav__item {
+  margin: 0;
+  padding: 0;
   margin-right: 20px;
 }
 
@@ -73,12 +68,12 @@ body {
 }
 
 /* 5. Активне посилання та лінія */
-.nav__link--is-active {
+.is-active {
   color: var(--a-secondary-color);
   position: relative;
 }
 
-.nav__link--is-active::after {
+.is-active::after {
   content: '';
   position: absolute;
   left: 0;
